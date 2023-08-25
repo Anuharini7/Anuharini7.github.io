@@ -49,7 +49,7 @@ const game = () => {
 		}
 		else if(player == 'rock'){
 			if(computer == 'paper'){
-				result.textContent = 'Computer Won';
+				result.textContent = 'Computer choice : Paper \n Computer Won';
 				computerScore++;
 				computerScoreBoard.textContent = computerScore;
 
@@ -61,7 +61,7 @@ const game = () => {
 		}
 		else if(player == 'scissors'){
 			if(computer == 'rock'){
-				result.textContent = 'Computer Won';
+				result.textContent = 'Computer choice : Rock \n Computer Won';
 				computerScore++;
 				computerScoreBoard.textContent = computerScore;
 			}else{
@@ -72,7 +72,7 @@ const game = () => {
 		}
 		else if(player == 'paper'){
 			if(computer == 'scissors'){
-				result.textContent = 'Computer Won';
+				result.textContent = 'Computer choice : Scissor \n Computer Won';
 				computerScore++;
 				computerScoreBoard.textContent = computerScore;
 			}else{
@@ -100,17 +100,17 @@ const game = () => {
 
 		if(playerScore > computerScore){
 			result.style.fontSize = '2rem';
-			result.innerText = 'You Won The Game'
+			result.innerText = 'You Won The Game!!'
 			result.style.color = '#308D46';
 		}
 		else if(playerScore < computerScore){
 			result.style.fontSize = '2rem';
-			result.innerText = 'You Lost The Game';
+			result.innerText = 'You Lost The Game!!';
 			result.style.color = 'red';
 		}
 		else{
 			result.style.fontSize = '2rem';
-			result.innerText = 'Tie';
+			result.innerText = 'Tie!';
 			result.style.color = 'grey'
 		}
 		reloadBtn.innerText = 'Restart';
