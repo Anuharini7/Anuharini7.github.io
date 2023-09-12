@@ -29,7 +29,7 @@
 	width: 30vw;
 	justify-content: space-evenly;
 	position: absolute;
-	top: 70px;
+	top: 130px;
 	z-index: 1;
 }
 
@@ -52,7 +52,6 @@
 .rock, .paper, .scissor{
 	padding: 0.8rem;
 	width: 100px;
-	border-radius: 10px;
 	background: black;
 	outline: none;
 	border-color: black;

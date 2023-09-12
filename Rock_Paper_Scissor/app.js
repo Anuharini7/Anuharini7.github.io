@@ -1,4 +1,3 @@
-
 const game = () => {
 	let playerScore = 0;
 	let computerScore = 0;
@@ -11,7 +10,7 @@ const game = () => {
 		const paperBtn = document.querySelector('.paper');
 		const scissorBtn = document.querySelector('.scissor');
 		const playerOptions = [rockBtn,paperBtn,scissorBtn];
-		const computerOptions = ['rock','paper','scissors']
+		const computerOptions = ['rock','paper','scissor']
 		
 		// Function to start playing game
 		playerOptions.forEach(option => {
@@ -45,38 +44,38 @@ const game = () => {
 		player = player.toLowerCase();
 		computer = computer.toLowerCase();
 		if(player === computer){
-			result.textContent = 'Tie'
+			result.textContent = 'Both chose same, Tie!'
 		}
 		else if(player == 'rock'){
 			if(computer == 'paper'){
-				result.textContent = 'Computer choice : Paper \n Computer Won';
+				result.textContent = 'Computer Won!!';
 				computerScore++;
 				computerScoreBoard.textContent = computerScore;
 
 			}else{
-				result.textContent = 'Player Won'
+				result.textContent = 'Player Won!!'
 				playerScore++;
 				playerScoreBoard.textContent = playerScore;
 			}
 		}
-		else if(player == 'scissors'){
+		else if(player == 'scissor'){
 			if(computer == 'rock'){
-				result.textContent = 'Computer choice : Rock \n Computer Won';
+				result.textContent = 'Computer Won!!';
 				computerScore++;
 				computerScoreBoard.textContent = computerScore;
 			}else{
-				result.textContent = 'Player Won';
+				result.textContent = 'Player Won!!';
 				playerScore++;
 				playerScoreBoard.textContent = playerScore;
 			}
 		}
 		else if(player == 'paper'){
-			if(computer == 'scissors'){
-				result.textContent = 'Computer choice : Scissor \n Computer Won';
+			if(computer == 'scissor'){
+				result.textContent = 'Computer Won!!';
 				computerScore++;
 				computerScoreBoard.textContent = computerScore;
 			}else{
-				result.textContent = 'Player Won';
+				result.textContent = 'Player Won!!';
 				playerScore++;
 				playerScoreBoard.textContent = playerScore;
 			}
