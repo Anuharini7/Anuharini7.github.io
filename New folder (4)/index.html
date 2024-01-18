@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TETRIS</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/button.css">
+	<link rel="stylesheet" href="css/game.css">
+</head>
+
+<body>
+
+	<div id="container">
+		<div id="left">
+			<h1 class="header" id="score-board" hidden="">scoreboard <br /><span id="score">0</span></h1>
+			<h1 class="header" id="game-over-text" hidden="">game over</h1>
+		</div>
+
+		<main id="game-table" class="game-container">
+
+		</main>
+	</div>
+
+	<div id="menu">
+
+		<br><br />
+		<br><br />
+		<br><br />
+		<br><br />
+		<br><br />
+		<br><br />
+		<a href="javascript:(new game()).start();" id="start-game" class="btn-push navy">start
+			game</a>
+		<br><br />
+		<br><br />
+
+
+	<audio controls="" autoplay="" loop="" hidden="">
+		<source src="sounds/soundatrack.mp3" type="audio/mpeg">
+	</audio>
+</body>
+<script src="js/main.js"></script>
+
+</html>
